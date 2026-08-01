@@ -1,2 +1,2 @@
 # madhushala
-Website designed for Madhushala by Mata
+All design elements required for Madhushala by Mata.
