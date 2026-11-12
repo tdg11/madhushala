@@ -228,7 +228,7 @@ ul.styled-list.pale-list li {
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.05em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
 }
 
 .tier-card__body {
@@ -238,34 +238,33 @@ ul.styled-list.pale-list li {
   line-height: 1.55;
 }
 
-/* Metallic finishes. Bronze/Gold use a flat diagonal gradient sweep;
-   Silver/Platinum use a generated brushed-metal grain texture. */
+/* Metallic finishes: all four share one gradient formula (same 135deg
+   angle, same 7 stops, same relative light/dark swing at each stop) so
+   the sheen reads identically across cards — hue and base lightness are
+   the only things that change per metal. */
 .tier-card--bronze {
-  background: linear-gradient(135deg, #4A2F18 0%, #6B4423 18%, #9C6B35 36%, #C4924C 50%, #9C6B35 64%, #6B4423 82%, #4A2F18 100%);
+  background: linear-gradient(135deg, #412D1B 0%, #624328 18%, #7F5734 36%, #B88151 50%, #7F5734 64%, #624328 82%, #412D1B 100%);
 }
 .tier-card--bronze .tier-card__band,
 .tier-card--bronze .tier-card__body { color: var(--color-cream); }
 
 .tier-card--silver {
-  background: linear-gradient(135deg, #55585c 0%, #7d8085 18%, #aeb1b5 36%, #d8dade 50%, #aeb1b5 64%, #7d8085 82%, #55585c 100%);
+  background: linear-gradient(135deg, #676B6F 0%, #7D8287 18%, #92969B 36%, #BFC2C4 50%, #92969B 64%, #7D8287 82%, #676B6F 100%);
 }
 .tier-card--silver .tier-card__band,
 .tier-card--silver .tier-card__body { color: #2c2d2f; }
-.tier-card--silver .tier-card__band { border-bottom-color: rgba(0, 0, 0, 0.2); }
 
 .tier-card--gold {
-  background: linear-gradient(135deg, #7A5D28 0%, #A3813C 18%, #C9A25A 36%, #EAD6A2 50%, #C9A25A 64%, #A3813C 82%, #7A5D28 100%);
+  background: linear-gradient(135deg, #6A5525 0%, #8C7031 18%, #AA893C 36%, #CDB170 50%, #AA893C 64%, #8C7031 82%, #6A5525 100%);
 }
 .tier-card--gold .tier-card__band,
 .tier-card--gold .tier-card__body { color: var(--color-ink); }
-.tier-card--gold .tier-card__band { border-bottom-color: rgba(58, 36, 32, 0.2); }
 
 .tier-card--platinum {
-  background: linear-gradient(135deg, #1c1d1f 0%, #3a3c3f 18%, #63666a 36%, #94979b 50%, #63666a 64%, #3a3c3f 82%, #1c1d1f 100%);
+  background: linear-gradient(135deg, #1D1E20 0%, #323439 18%, #46484E 36%, #6E737C 50%, #46484E 64%, #323439 82%, #1D1E20 100%);
 }
 .tier-card--platinum .tier-card__band,
 .tier-card--platinum .tier-card__body { color: var(--color-cream); }
-.tier-card--platinum .tier-card__band { border-bottom-color: rgba(0, 0, 0, 0.3); }
 
 /* Fee lines */
 
