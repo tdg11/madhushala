@@ -241,17 +241,17 @@ module.exports = function render(data) {
     ${parasBold(data.page8.intro, [0])}
     ${bulletList(data.page8.assessedOn)}
 
-    <h3 class="subsection-title" style="margin-top:8px;">${esc(data.page8.eligibility.heading)}</h3>
+    <h3 class="subsection-title" style="margin-top:5px;">${esc(data.page8.eligibility.heading)}</h3>
     <p class="secondary">${esc(data.page8.eligibility.intro)}</p>
     ${bulletList(data.page8.eligibility.bullets)}
 
-    <h3 class="subsection-title" style="margin-top:8px;">${esc(data.page8.conditions.heading)}</h3>
+    <h3 class="subsection-title" style="margin-top:5px;">${esc(data.page8.conditions.heading)}</h3>
     ${bulletList(data.page8.conditions.bullets)}
 
-    <h3 class="subsection-title" style="margin-top:8px;">${esc(data.page8.preference.heading)}</h3>
+    <h3 class="subsection-title" style="margin-top:5px;">${esc(data.page8.preference.heading)}</h3>
     ${bulletList(data.page8.preference.bullets)}
 
-    <h3 class="subsection-title" style="margin-top:8px;">${esc(data.page8.expectations.heading)}</h3>
+    <h3 class="subsection-title" style="margin-top:5px;">${esc(data.page8.expectations.heading)}</h3>
     ${bulletList(data.page8.expectations.bullets, 'styled-list check-list')}
 
     <p class="secondary" style="margin-top:6px;">${esc(data.page8.closing)}</p>`,

@@ -92,35 +92,43 @@ ul.styled-list li {
   margin-bottom: 3px;
 }
 
-/* top:50%/translateY(-50%) centers the marker on the li's own vertical
-   axis instead of a hand-tuned pixel offset, so it stays centered on
-   the text regardless of font-size/line-height in whichever context
-   (dense, readable, etc.) this list ends up in. */
+/* Marker top is an explicit px offset centering it on the FIRST line
+   specifically (line-height is 24px everywhere this is used — every
+   bulletList() in this document renders inside .prospectus-content,
+   whose ul.styled-list li override below sets font-size:15px/
+   line-height:1.6 = 24px). translateY(-50%)/margin-based centering
+   looks identical for a one-line item but centers on the li's FULL
+   height once a bullet wraps to two lines, pulling the marker down
+   off the first line — this stays pinned to line 1 regardless. */
 ul.styled-list li::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 9.5px;
   width: 5px;
   height: 5px;
   background: var(--color-gold);
   border-radius: 50%;
 }
 
+/* Hand-drawn checkmark (border-left + border-bottom, rotated) instead of
+   the Unicode glyph — a font's checkmark character is rarely centered
+   within its own metrics box, especially once a fallback font kicks in,
+   so no amount of top/transform math on the glyph can guarantee it
+   lines up. A drawn shape has a geometry we fully control instead. */
 ul.check-list li::before {
-  content: '\2713';
+  content: '';
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: auto;
-  height: auto;
+  left: 1px;
+  top: 7.5px;
+  width: 8px;
+  height: 5px;
+  border: none;
+  border-left: 1.6px solid var(--color-maroon);
+  border-bottom: 1.6px solid var(--color-maroon);
   background: none;
   border-radius: 0;
-  color: var(--color-maroon);
-  font-size: 12px;
-  line-height: 1;
+  transform: rotate(-45deg);
 }
 
 ul.check-list li {
@@ -135,32 +143,59 @@ ul.styled-list.pale-list li {
 
 /* Readability pass for text-dense pages (older readers): bigger type,
    more line-height and breathing room between items, a bolder and larger
-   bullet marker that's still a restrained dot rather than a heavy icon. */
-.dense.readable p, .dense.readable .body-text {
-  font-size: 14.5px;
-  line-height: 1.6;
-  margin-bottom: 8px;
+   bullet marker that's still a restrained dot rather than a heavy icon.
+   Selectors are compounded with .prospectus-content (every page that
+   carries "dense readable" also carries "prospectus-content") so this
+   reliably outranks .prospectus-content.dense below, which shares the
+   same base specificity and would otherwise win on source order alone. */
+.prospectus-content.dense.readable p,
+.prospectus-content.dense.readable .body-text {
+  font-size: 13.5px;
+  line-height: 1.4;
+  margin-bottom: 4px;
 }
 
-.dense.readable ul.styled-list li {
-  font-size: 14.5px;
-  line-height: 1.6;
-  margin-bottom: 8px;
-  padding-left: 20px;
+.prospectus-content.dense.readable ul.styled-list {
+  margin-bottom: 4px;
 }
 
-.dense.readable ul.styled-list li::before {
-  width: 8px;
-  height: 8px;
+.prospectus-content.dense.readable ul.styled-list li {
+  font-size: 13.5px;
+  line-height: 1.4;
+  margin-bottom: 3px;
+  padding-left: 18px;
 }
 
-.dense.readable ul.check-list li::before {
-  font-size: 14px;
+/* Marker top is pinned to an explicit px offset computed from this
+   context's own line-height (23.2px = 14.5px * 1.6), centering it on
+   the FIRST line specifically — translateY(-50%)/margin-based centering
+   would instead center on the li's full height, which drifts off the
+   first line whenever a bullet wraps to two lines. */
+.prospectus-content.dense.readable ul.styled-list li::before {
+  top: 6px;
+  transform: none;
+  width: 7px;
+  height: 7px;
 }
 
-.dense.readable .subsection-title {
-  font-size: 16px;
-  margin-bottom: 6px;
+.prospectus-content.dense.readable ul.check-list li::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 6.5px;
+  width: 10px;
+  height: 6px;
+  background: none;
+  border-radius: 0;
+  border: none;
+  border-left: 1.8px solid var(--color-maroon);
+  border-bottom: 1.8px solid var(--color-maroon);
+  transform: rotate(-45deg);
+}
+
+.prospectus-content.dense.readable .subsection-title {
+  font-size: 15px;
+  margin-bottom: 4px;
 }
 
 /* Tags / category cards */
