@@ -104,9 +104,9 @@ ul.styled-list li::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 9.5px;
-  width: 5px;
-  height: 5px;
+  top: 10px;
+  width: 4px;
+  height: 4px;
   background: var(--color-gold);
   border-radius: 50%;
 }
@@ -148,10 +148,10 @@ ul.styled-list.pale-list li {
    would instead center on the li's full height, which drifts off the
    first line whenever a bullet wraps to two lines. */
 .prospectus-content.dense.readable ul.styled-list li::before {
-  top: 6px;
+  top: 6.5px;
   transform: none;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
 }
 
 .prospectus-content.dense.readable .subsection-title {
