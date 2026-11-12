@@ -246,7 +246,6 @@ ul.styled-list.pale-list li {
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.05em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
 }
 
 .tier-card__body {
