@@ -238,30 +238,38 @@ ul.styled-list.pale-list li {
   line-height: 1.55;
 }
 
-/* Metallic finishes: all four share one gradient formula (same 135deg
-   angle, same 7 stops, same relative light/dark swing at each stop) so
-   the sheen reads identically across cards — hue and base lightness are
-   the only things that change per metal. */
+/* Metallic finishes: all four are baked PNGs generated from one shared
+   gradient formula (same 135deg angle, same 7 stops, same relative
+   light/dark swing at each stop — only hue/base lightness differ per
+   metal), rather than a live CSS linear-gradient. A multi-stop gradient
+   gets embedded in the PDF as a shading object, and different PDF
+   readers interpolate/rasterize shadings differently — some visibly
+   band or show a bright seam right at a stop boundary. A flat raster
+   image is just pixels: identical in every viewer. */
 .tier-card--bronze {
-  background: linear-gradient(135deg, #412D1B 0%, #624328 18%, #7F5734 36%, #B88151 50%, #7F5734 64%, #624328 82%, #412D1B 100%);
+  background-image: url('../../assets/tier-gradient-bronze.png');
+  background-size: 100% 100%;
 }
 .tier-card--bronze .tier-card__band,
 .tier-card--bronze .tier-card__body { color: var(--color-cream); }
 
 .tier-card--silver {
-  background: linear-gradient(135deg, #676B6F 0%, #7D8287 18%, #92969B 36%, #BFC2C4 50%, #92969B 64%, #7D8287 82%, #676B6F 100%);
+  background-image: url('../../assets/tier-gradient-silver.png');
+  background-size: 100% 100%;
 }
 .tier-card--silver .tier-card__band,
 .tier-card--silver .tier-card__body { color: #2c2d2f; }
 
 .tier-card--gold {
-  background: linear-gradient(135deg, #6A5525 0%, #8C7031 18%, #AA893C 36%, #CDB170 50%, #AA893C 64%, #8C7031 82%, #6A5525 100%);
+  background-image: url('../../assets/tier-gradient-gold.png');
+  background-size: 100% 100%;
 }
 .tier-card--gold .tier-card__band,
 .tier-card--gold .tier-card__body { color: var(--color-ink); }
 
 .tier-card--platinum {
-  background: linear-gradient(135deg, #1D1E20 0%, #323439 18%, #46484E 36%, #6E737C 50%, #46484E 64%, #323439 82%, #1D1E20 100%);
+  background-image: url('../../assets/tier-gradient-platinum.png');
+  background-size: 100% 100%;
 }
 .tier-card--platinum .tier-card__band,
 .tier-card--platinum .tier-card__body { color: var(--color-cream); }
