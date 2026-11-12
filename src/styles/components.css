@@ -246,13 +246,11 @@ ul.styled-list.pale-list li {
 .tier-card--bronze .tier-card__body { color: var(--color-cream); }
 
 .tier-card--silver {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(20, 20, 22, 0.25)), url('../../assets/texture-silver.jpg');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, #55585c 0%, #7d8085 18%, #aeb1b5 36%, #d8dade 50%, #aeb1b5 64%, #7d8085 82%, #55585c 100%);
 }
 .tier-card--silver .tier-card__band,
 .tier-card--silver .tier-card__body { color: #2c2d2f; }
-.tier-card--silver .tier-card__band { border-bottom-color: rgba(0, 0, 0, 0.2); background: rgba(255, 255, 255, 0.15); }
+.tier-card--silver .tier-card__band { border-bottom-color: rgba(0, 0, 0, 0.2); }
 
 .tier-card--gold {
   background: linear-gradient(135deg, #7A5D28 0%, #A3813C 18%, #C9A25A 36%, #EAD6A2 50%, #C9A25A 64%, #A3813C 82%, #7A5D28 100%);
@@ -262,9 +260,7 @@ ul.styled-list.pale-list li {
 .tier-card--gold .tier-card__band { border-bottom-color: rgba(58, 36, 32, 0.2); }
 
 .tier-card--platinum {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.35)), url('../../assets/texture-platinum.jpg');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, #1c1d1f 0%, #3a3c3f 18%, #63666a 36%, #94979b 50%, #63666a 64%, #3a3c3f 82%, #1c1d1f 100%);
 }
 .tier-card--platinum .tier-card__band,
 .tier-card--platinum .tier-card__body { color: var(--color-cream); }
