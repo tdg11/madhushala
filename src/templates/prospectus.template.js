@@ -202,7 +202,7 @@ module.exports = function render(data) {
     <div>
       <h2 class="section-title">${esc(data.page6.heading)}</h2>
       ${parasBold(data.page6.paragraphs, [1])}
-      ${bulletList(data.page6.bullets, 'styled-list check-list')}
+      ${bulletList(data.page6.bullets)}
       <p style="margin-top:10px;">${esc(data.page6.closing)}</p>
     </div>
     ${photoBanner(photoCohort, 310)}`,
@@ -252,7 +252,7 @@ module.exports = function render(data) {
     ${bulletList(data.page8.preference.bullets)}
 
     <h3 class="subsection-title" style="margin-top:5px;">${esc(data.page8.expectations.heading)}</h3>
-    ${bulletList(data.page8.expectations.bullets, 'styled-list check-list')}
+    ${bulletList(data.page8.expectations.bullets)}
 
     <p class="secondary" style="margin-top:6px;">${esc(data.page8.closing)}</p>`,
     '',

@@ -111,30 +111,6 @@ ul.styled-list li::before {
   border-radius: 50%;
 }
 
-/* Hand-drawn checkmark (border-left + border-bottom, rotated) instead of
-   the Unicode glyph — a font's checkmark character is rarely centered
-   within its own metrics box, especially once a fallback font kicks in,
-   so no amount of top/transform math on the glyph can guarantee it
-   lines up. A drawn shape has a geometry we fully control instead. */
-ul.check-list li::before {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: 7.5px;
-  width: 8px;
-  height: 5px;
-  border: none;
-  border-left: 1.6px solid var(--color-maroon);
-  border-bottom: 1.6px solid var(--color-maroon);
-  background: none;
-  border-radius: 0;
-  transform: rotate(-45deg);
-}
-
-ul.check-list li {
-  padding-left: 16px;
-}
-
 /* Used where pale/black text is intentionally swapped within a section
    (e.g. Recognition for Sponsors) — same bullet styling, muted text. */
 ul.styled-list.pale-list li {
@@ -176,21 +152,6 @@ ul.styled-list.pale-list li {
   transform: none;
   width: 7px;
   height: 7px;
-}
-
-.prospectus-content.dense.readable ul.check-list li::before {
-  content: '';
-  position: absolute;
-  left: 1px;
-  top: 6.5px;
-  width: 10px;
-  height: 6px;
-  background: none;
-  border-radius: 0;
-  border: none;
-  border-left: 1.8px solid var(--color-maroon);
-  border-bottom: 1.8px solid var(--color-maroon);
-  transform: rotate(-45deg);
 }
 
 .prospectus-content.dense.readable .subsection-title {
