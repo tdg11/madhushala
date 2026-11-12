@@ -92,11 +92,16 @@ ul.styled-list li {
   margin-bottom: 3px;
 }
 
+/* top:50%/translateY(-50%) centers the marker on the li's own vertical
+   axis instead of a hand-tuned pixel offset, so it stays centered on
+   the text regardless of font-size/line-height in whichever context
+   (dense, readable, etc.) this list ends up in. */
 ul.styled-list li::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 5px;
   height: 5px;
   background: var(--color-gold);
@@ -107,13 +112,15 @@ ul.check-list li::before {
   content: '\2713';
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: auto;
   height: auto;
   background: none;
   border-radius: 0;
   color: var(--color-maroon);
   font-size: 12px;
+  line-height: 1;
 }
 
 ul.check-list li {
@@ -145,12 +152,10 @@ ul.styled-list.pale-list li {
 .dense.readable ul.styled-list li::before {
   width: 8px;
   height: 8px;
-  top: 7.5px;
 }
 
 .dense.readable ul.check-list li::before {
   font-size: 14px;
-  top: -4px;
 }
 
 .dense.readable .subsection-title {
