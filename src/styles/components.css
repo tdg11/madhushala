@@ -1,0 +1,502 @@
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: var(--eyebrow-tracking);
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: var(--eyebrow-weight);
+  margin: 0;
+}
+
+.tagline {
+  font-family: var(--font-body);
+}
+
+h1.doc-title,
+.doc-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-cream);
+  margin: 0;
+}
+
+h2.section-title,
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.2;
+  color: var(--color-maroon);
+  margin: 0 0 10px;
+}
+
+h3.subsection-title,
+.subsection-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-ink);
+  margin: 0 0 6px;
+}
+
+p strong, .body-text strong, li strong {
+  font-weight: 700;
+  color: var(--color-maroon);
+}
+
+p.secondary {
+  color: var(--color-ink-secondary);
+}
+
+.signature {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--color-maroon);
+  margin: 0;
+}
+
+.dense p, .dense .body-text {
+  font-size: 12.5px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.dense .section-title {
+  margin-bottom: 6px;
+}
+
+.dense ul.styled-list li {
+  margin-bottom: 2px;
+}
+
+.rule-gold {
+  border: none;
+  border-top: 1px solid var(--color-gold);
+  margin: 10px 0;
+}
+
+ul.styled-list {
+  list-style: none;
+  margin: 0 0 9px;
+  padding: 0;
+}
+
+ul.styled-list li {
+  position: relative;
+  padding-left: 16px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.42;
+  color: var(--color-ink);
+  margin-bottom: 3px;
+}
+
+ul.styled-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  background: var(--color-gold);
+  border-radius: 50%;
+}
+
+ul.check-list li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  color: var(--color-maroon);
+  font-size: 12px;
+}
+
+ul.check-list li {
+  padding-left: 18px;
+}
+
+/* Used where pale/black text is intentionally swapped within a section
+   (e.g. Recognition for Sponsors) — same bullet styling, muted text. */
+ul.styled-list.pale-list li {
+  color: var(--color-ink-secondary);
+}
+
+/* Readability pass for text-dense pages (older readers): bigger type,
+   more line-height and breathing room between items, a bolder and larger
+   bullet marker that's still a restrained dot rather than a heavy icon. */
+.dense.readable p, .dense.readable .body-text {
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.dense.readable ul.styled-list li {
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+.dense.readable ul.styled-list li::before {
+  width: 8px;
+  height: 8px;
+  top: 7.5px;
+}
+
+.dense.readable ul.check-list li::before {
+  font-size: 14px;
+  top: -4px;
+}
+
+.dense.readable .subsection-title {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* Tags / category cards */
+
+.tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-maroon);
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+  padding: 3px 8px;
+}
+
+.category-card {
+  border: 1px solid rgba(122, 27, 36, 0.16);
+  border-radius: 6px;
+  background: #fff;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+}
+
+.category-card__name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-maroon);
+  margin: 0 0 4px;
+}
+
+.category-card__desc {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-ink-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Coloured category-card variant — ivory background with a gold accent
+   bar, matching how gold/maroon are used everywhere else in this design
+   (thin rules, borders, small text) rather than as a large flat fill. */
+.category-card--highlight {
+  background: #FDFAF4;
+  border: 1px solid rgba(122, 27, 36, 0.14);
+  border-left: 5px solid var(--color-gold);
+}
+.category-card--highlight .category-card__name {
+  color: var(--color-maroon);
+}
+.category-card--highlight .category-card__desc {
+  color: var(--color-ink);
+}
+
+/* Sponsorship tier cards — colored header band + bullet-style body,
+   semantic colors per tier matching the client's brand reference. */
+
+.tier-card {
+  border: 1px solid rgba(122, 27, 36, 0.18);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tier-card__band {
+  padding: 10px 16px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.tier-card__body {
+  padding: 12px 16px 14px;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
+/* Metallic finishes. Bronze/Gold use a flat diagonal gradient sweep;
+   Silver/Platinum use a generated brushed-metal grain texture. */
+.tier-card--bronze {
+  background: linear-gradient(135deg, #4A2F18 0%, #6B4423 18%, #9C6B35 36%, #C4924C 50%, #9C6B35 64%, #6B4423 82%, #4A2F18 100%);
+}
+.tier-card--bronze .tier-card__band,
+.tier-card--bronze .tier-card__body { color: var(--color-cream); }
+
+.tier-card--silver {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(20, 20, 22, 0.25)), url('../../assets/texture-silver.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.tier-card--silver .tier-card__band,
+.tier-card--silver .tier-card__body { color: #2c2d2f; }
+.tier-card--silver .tier-card__band { border-bottom-color: rgba(0, 0, 0, 0.2); background: rgba(255, 255, 255, 0.15); }
+
+.tier-card--gold {
+  background: linear-gradient(135deg, #7A5D28 0%, #A3813C 18%, #C9A25A 36%, #EAD6A2 50%, #C9A25A 64%, #A3813C 82%, #7A5D28 100%);
+}
+.tier-card--gold .tier-card__band,
+.tier-card--gold .tier-card__body { color: var(--color-ink); }
+.tier-card--gold .tier-card__band { border-bottom-color: rgba(58, 36, 32, 0.2); }
+
+.tier-card--platinum {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.35)), url('../../assets/texture-platinum.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.tier-card--platinum .tier-card__band,
+.tier-card--platinum .tier-card__body { color: var(--color-cream); }
+.tier-card--platinum .tier-card__band { border-bottom-color: rgba(0, 0, 0, 0.3); }
+
+/* Fee lines */
+
+.fee-box {
+  background: #FDFAF4;
+  border: 1px solid rgba(122, 27, 36, 0.14);
+  border-left: 5px solid var(--color-gold);
+  border-radius: 8px;
+  padding: 4px 16px;
+  margin: 6px 0 8px;
+}
+
+.fee-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-body);
+  font-size: 15.5px;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(201, 162, 90, 0.4);
+}
+
+.fee-line:last-child {
+  border-bottom: none;
+}
+
+.fee-line__label {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.fee-line__value {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-maroon);
+}
+
+/* CTA / dark panel */
+
+.cta-panel {
+  background: var(--color-green);
+  color: var(--color-cream);
+  padding: 14px 18px;
+  border-radius: 8px;
+}
+
+.cta-panel p {
+  margin-bottom: 5px;
+}
+
+.cta-panel .doc-title,
+.cta-panel .section-title,
+.cta-panel .subsection-title {
+  color: var(--color-cream);
+}
+
+.cta-panel p {
+  color: rgba(251, 247, 239, 0.88);
+}
+
+.cta-panel .eyebrow {
+  color: var(--color-gold);
+}
+
+/* Form fields (Application Form) */
+
+.field-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.field {
+  flex: 1 1 0;
+}
+
+.field__label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ink-secondary);
+  margin-bottom: 3px;
+}
+
+.field__box {
+  border: 1px solid rgba(58, 36, 32, 0.3);
+  border-radius: 4px;
+  height: 26px;
+}
+
+.field__box.tall {
+  height: 70px;
+}
+
+.checkbox-box {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-ink);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.form-section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-maroon);
+  margin: 16px 0 8px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(201, 162, 90, 0.4);
+}
+
+.form-section-title:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Tables */
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+}
+
+table.data-table th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-maroon);
+  border-bottom: 1px solid var(--color-gold);
+  padding: 6px 8px;
+}
+
+table.data-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(122, 27, 36, 0.1);
+}
+
+table.data-table td.tier-name {
+  font-family: var(--font-display);
+  color: var(--color-maroon);
+  white-space: nowrap;
+}
+
+/* Prospectus-specific overrides: more generous type scale than the
+   compact defaults above, since the prospectus has more breathing room
+   per page than the denser application form. */
+
+.prospectus-content p,
+.prospectus-content .body-text {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.prospectus-content ul.styled-list li {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 9px;
+}
+
+.prospectus-content .category-card {
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+
+.prospectus-content .category-card__name {
+  font-size: 19px;
+}
+
+.prospectus-content .category-card__desc {
+  font-size: 14.5px;
+}
+
+.prospectus-content .section-title {
+  font-size: 23px;
+  margin-bottom: 14px;
+}
+
+.prospectus-content .tag {
+  font-size: 11px;
+  padding: 4px 10px;
+}
+
+.prospectus-content.dense p,
+.prospectus-content.dense .body-text {
+  font-size: 12.5px;
+  line-height: 1.42;
+  margin-bottom: 6px;
+}
+
+.prospectus-content.dense ul.styled-list li {
+  font-size: 12.5px;
+  line-height: 1.38;
+  margin-bottom: 3px;
+}
+
+.prospectus-content.dense .section-title {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.prospectus-content.dense .subsection-title {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.spacer-sm { height: 6px; }
+.spacer-md { height: 12px; }
+
+.cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+/* Pages with a closing panel (vision / contact) anchor that panel to the
+   page's bottom edge instead of centering the whole block as one unit. */
+.prospectus-content.anchored {
+  justify-content: space-between;
+}

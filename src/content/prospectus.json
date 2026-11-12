@@ -1,0 +1,234 @@
+{
+  "documentLabel": "Sponsorship Prospectus",
+
+  "cover": {
+    "wordmarkLines": ["Madhushala By Mata", "Wine Education", "Scholarship Programme"],
+    "tagline": "Investing in People   |   Elevating Hospitality   |   Transforming Careers",
+    "docLabel": "Sponsorship Prospectus"
+  },
+
+  "page2": {
+    "heading": "Introduction",
+    "paragraphs": [
+      "Goa has earned global recognition as one of India's leading hospitality and tourism destinations.",
+      "Every day, thousands of professionals working in hotels, restaurants, bars, cafés, resorts, cruise lines, retail and tourism create memorable experiences for guests from around the world.",
+      "Yet many talented and hardworking individuals never have the opportunity to receive internationally recognised wine education; not because they lack ability, but because professional training remains financially out of reach.",
+      "Madhushala by Mata believes that talent should never be limited by circumstance.",
+      "Through the Madhushala By Mata Wine Education Scholarship Programme, we aim to provide deserving Goa’s students and hospitality professionals with access to internationally respected Wine & Spirit Education Trust (WSET) qualifications, helping them build rewarding careers both within Goa and across the global hospitality industry.",
+      "We invite visionary organisations and individuals to partner with us in creating the next generation of highly skilled hospitality professionals."
+    ],
+    "vision": {
+      "heading": "Our Vision",
+      "text": "To establish Goa as India's benchmark for internationally qualified hospitality professionals through accessible wine education."
+    }
+  },
+
+  "page3": {
+    "about": {
+      "heading": "About Madhushala by Mata",
+      "paragraphs": [
+        "Madhushala by Mata is Goa’s exclusive WSET approved programme provider & a specialist wine education academy dedicated to delivering internationally recognised WSET qualifications in a professional, inclusive and engaging learning environment.",
+        "Our mission extends beyond teaching wine.",
+        "We believe education creates opportunity.",
+        "By equipping individuals with globally recognised knowledge and qualifications, we help them become more confident professionals capable of representing Goa's hospitality industry with excellence.",
+        "Whether our students choose careers in luxury hotels, aviation, cruise lines, restaurants, wine trade, retail, tourism or international hospitality, our goal is to prepare them to compete confidently on a global stage."
+      ]
+    },
+    "founder": {
+      "heading": "Meet the Founder",
+      "name": "Manisha Tarcar",
+      "role": "Founder | Madhushala by Mata",
+      "credentialTags": ["Le Cordon Bleu London Graduate", "WSET Certified Educator", "Brewer/ Distiller"],
+      "paragraphs": [
+        "Manisha Tarcar brings together international education and practical beverage expertise developed through studies in wine, brewing and distilling in England.",
+        "Through Madhushala by Mata, her goal is to raise the standard of wine education in Goa by making internationally recognised education more accessible.",
+        "Having witnessed first-hand the value that structured wine education brings to hospitality professionals, she established Madhushala by Mata with a simple belief:"
+      ],
+      "pullQuote": "Professional education has the power to transform careers and uplift an entire industry."
+    }
+  },
+
+  "page4": {
+    "heading": "Why This Matters",
+    "paragraphs": [
+      "Hospitality is one of Goa's largest employers.",
+      "Every year thousands of professionals interact with guests who increasingly expect knowledgeable recommendations and world-class service.",
+      "However, many talented individuals have never received structured wine education.",
+      "As a result they often:"
+    ],
+    "bullets": [
+      "Lack confidence discussing wines with guests.",
+      "Miss career advancement opportunities.",
+      "Find it difficult to compete for international positions.",
+      "Have limited access to recognised professional qualifications."
+    ],
+    "afterParagraphs": [
+      "Wine knowledge today is no longer considered a luxury skill, it has become an essential professional competency for hospitality.",
+      "By providing internationally recognised education, we help create professionals who are better prepared for careers across:"
+    ],
+    "industries": [
+      "Luxury Hotels", "Fine Dining Restaurants", "Wine Retail", "Wine trade & Industry",
+      "Aviation", "Cruise Lines", "Resorts", "Clubs",
+      "Tourism", "Beverage Distribution", "Event Management", "International Hospitality"
+    ]
+  },
+
+  "page5": {
+    "heading": "The Scholarship Programme",
+    "paragraphs": [
+      "The Madhushala By Mata Wine Education Scholarship Programme has been created to remove financial barriers that prevent deserving individuals from accessing world-class wine education.",
+      "Scholarships fully fund the student's WSET course; ensuring recipients receive exactly the same educational experience as every paying student.",
+      "We believe excellence should never be compromised."
+    ],
+    "categoriesHeading": "Scholarship Categories",
+    "categories": [
+      { "name": "Hospitality Rising Star Scholarship", "description": "Supporting professionals employed in hotels, restaurants, cafés, bars and resorts." },
+      { "name": "Women in Wine Scholarship", "description": "Encouraging women pursuing careers within hospitality and beverages." },
+      { "name": "Youth Skills Scholarship", "description": "Supporting young Goans entering hospitality, tourism and food & beverage industries." }
+    ],
+    "closing": "Recipients are selected through a transparent application process based upon financial need, commitment and future potential."
+  },
+
+  "page6": {
+    "heading": "Why Become a Scholarship Partner?",
+    "paragraphs": [
+      "Your sponsorship is far more than financial support.",
+      "It is an investment in Goa's future workforce.",
+      "As a Scholarship Partner, your organisation helps create:"
+    ],
+    "bullets": [
+      "Better educated hospitality professionals",
+      "Stronger customer experiences",
+      "Higher service standards",
+      "Greater employment opportunities",
+      "International career pathways",
+      "A more competitive tourism industry"
+    ],
+    "closing": "Together we can strengthen the reputation of Goa as a destination known not only for its hospitality; but for the quality of its hospitality professionals."
+  },
+
+  "page7": {
+    "heading": "Sponsorship Opportunities",
+    "intro": "Sponsors may choose to support:",
+    "tiers": [
+      { "name": "Bronze Partner", "description": "Sponsor cohort of 10 deserving students, WSET Level 1 or WSET Level 2" },
+      { "name": "Silver Partner", "description": "Sponsor cohort of 20 deserving students, WSET Level 1 or WSET Level 2" },
+      { "name": "Gold Partner", "description": "Sponsor an entire cohort of 30 students, WSET Level 1 or WSET Level 2" },
+      { "name": "Platinum Partner", "description": "Sponsor complete scholarships for 30 students each across both WSET Level 1 and Level 2 Awards." }
+    ],
+    "longTermNote": "Long-term partnerships are welcomed and may include annual scholarship commitments designed to create lasting educational impact.",
+    "fees": {
+      "heading": "Course Fee per Student",
+      "lines": [
+        { "label": "WSET Level 1 Award, Wines", "value": "INR 19,999" },
+        { "label": "WSET Level 2 Award, Wines", "value": "INR 44,999" }
+      ]
+    },
+    "recognition": {
+      "heading": "Recognition for Sponsors",
+      "intro": "Partners may receive:",
+      "bullets": [
+        "Recognition as a Founding Scholarship Partner",
+        "Scholarship Partnership Certificate",
+        "Recognition across Madhushala by Mata communications",
+        "Sponsor acknowledgement during scholarship events.",
+        "Student impact reports",
+        "Success stories of scholarship recipients",
+        "Opportunity to nominate deserving hospitality staff"
+      ],
+      "closingNotes": [
+        "This can strengthen your ESG/CSR initiatives.",
+        "Partners, if they wish, receive a summary of the selected candidates and the impact of their contribution.",
+        "Anonymous sponsorships are also welcomed."
+      ]
+    }
+  },
+
+  "page8": {
+    "heading": "Selection & Governance",
+    "intro": [
+      "Scholarships are awarded through a transparent and merit-based selection process.",
+      "Applicants are assessed on:"
+    ],
+    "assessedOn": [
+      "Financial need",
+      "Career aspirations",
+      "Commitment to learning",
+      "Professional conduct",
+      "Motivation statement"
+    ],
+    "eligibility": {
+      "heading": "Proposed Scholarship Eligibility",
+      "intro": "To ensure the programme reaches those who genuinely need assistance, applicants should:",
+      "bullets": [
+        "Be at least 18 years of age",
+        "Be a resident of Goa for a minimum of 5 years",
+        "Demonstrate financial need (parents income below 5-8 lakh per annum)",
+        "Have completed at least Class 12 (or equivalent)",
+        "Writing & speaking English language proficiency.",
+        "If a student, be one of the top students in their respective college in the food & beverage programme.",
+        "If currently employed, seeking employment or pursuing a career in hospitality, tourism, aviation, cruise lines, food & beverage, retail, or related industries.",
+        "Submit a short statement explaining how the scholarship would help their career",
+        "Attend all classes and sit the WSET examination",
+        "Agree to maintain professional conduct throughout the course"
+      ]
+    },
+    "conditions": {
+      "heading": "Some Conditions Apply",
+      "bullets": [
+        "One scholarship per student for WSET Level 1 Award except if he/she passes with 100% marks can apply for scholarship for WSET Level 2 Award.",
+        "Preference for applicants who have not previously received funded professional certifications."
+      ]
+    },
+    "preference": {
+      "heading": "Preference May Be Given To",
+      "bullets": [
+        "Hospitality professional applicants recommended by employers or hospitality associations",
+        "First-generation learners",
+        "Women returning to work",
+        "Individuals from economically weaker backgrounds",
+        "Young Goans beginning hospitality careers",
+        "Persons working in small restaurants, cafés, beach shacks, hotels, wine retail or tourism"
+      ]
+    },
+    "expectations": {
+      "heading": "Every Recipient Is Expected To",
+      "bullets": [
+        "Attend all classes",
+        "Sit the WSET examination",
+        "Maintain professional conduct",
+        "Complete programme requirements"
+      ]
+    },
+    "closing": "Sponsors may receive annual reports outlining programme impact while respecting recipient privacy."
+  },
+
+  "page9": {
+    "heading": "Join Us in Building the Future of Hospitality",
+    "paragraphs": [
+      "Every scholarship represents more than one student.",
+      "It represents:"
+    ],
+    "representLines": [
+      "A family whose future changes.",
+      "A hospitality professional who discovers confidence.",
+      "A business that benefits from better-trained staff.",
+      "A guest who receives exceptional service.",
+      "A stronger tourism industry."
+    ],
+    "closingParagraphs": [
+      "Our long-term vision is to create Goa's most respected wine education scholarship programme, helping hundreds of hospitality professionals gain internationally recognised qualifications over the coming years.",
+      "By investing in internationally recognised wine education today, you are helping create opportunities that will benefit individuals, employers in the wine & hospitality industry for years to come.",
+      "We invite you to become a founding partner in this journey."
+    ],
+    "contact": {
+      "heading": "Contact",
+      "name": "Manisha Tarcar | Founder",
+      "org": "Madhushala by Mata",
+      "role": "WSET Approved Programme Provider",
+      "address": "Sea-View, Campal, Panaji, Goa – 403001, India",
+      "phone": "+91 9823948247",
+      "email": "mata@madhushalabymata.com"
+    }
+  }
+}

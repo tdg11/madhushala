@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/LibreCaslonText-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../assets/fonts/LibreCaslonText-400-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../assets/fonts/LibreCaslonText-700-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/EBGaramond-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../assets/fonts/EBGaramond-400-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../assets/fonts/EBGaramond-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../assets/fonts/EBGaramond-700-normal.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, ul, ol, hr {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #999;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+/* One .page = one PDF page. Fixed A4 dimensions so content is verified by
+   bounding-box measurement rather than eyeballed print preview. */
+.page {
+  position: relative;
+  width: var(--page-width);
+  height: var(--page-height);
+  background: var(--color-cream);
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5mm;
+}
+
+.page:last-child {
+  page-break-after: auto;
+  break-after: auto;
+}
+
+.page-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120mm;
+  transform: translate(-50%, -50%);
+  opacity: 0.05;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page-header,
+.page-footer {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--page-margin);
+}
+
+.page-header {
+  height: var(--header-height);
+  border-bottom: var(--rule-gold);
+}
+
+.page-footer {
+  height: var(--footer-height);
+  border-top: var(--rule-gold);
+  font-size: 9px;
+  color: var(--color-ink-secondary);
+  letter-spacing: 0.04em;
+}
+
+.page-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-header__crest {
+  height: 19.4mm;
+  width: auto;
+  display: block;
+}
+
+.page-header__wordmark {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: var(--color-maroon);
+  line-height: 1.15;
+}
+
+.page-header__wordmark strong {
+  display: block;
+  font-weight: 400;
+}
+
+.page-header__label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: var(--eyebrow-tracking);
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: var(--eyebrow-weight);
+}
+
+.page-footer__contact {
+  text-align: right;
+}
+
+.page-body {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  padding: var(--body-pad-y) var(--page-margin);
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Opt-in for pages whose real content is too dense for the generous
+   default padding — pulled in only where check-overflow proves it's
+   needed, so light pages keep the airier default. */
+.page-body.tight {
+  padding: var(--body-pad-y-tight) var(--page-margin);
+}

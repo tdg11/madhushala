@@ -1,0 +1,25 @@
+:root {
+  --color-maroon: #7A1B24;
+  --color-burgundy: #741924;
+  --color-gold: #C9A25A;
+  --color-green: #466E54;
+  --color-cream: #FBF7EF;
+  --color-ink: #3A2420;
+  --color-ink-secondary: rgba(58, 36, 32, 0.62);
+
+  --font-display: 'Libre Caslon Text', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, serif;
+
+  --eyebrow-tracking: 0.14em;
+  --eyebrow-weight: 600;
+
+  --page-width: 210mm;
+  --page-height: 297mm;
+  --page-margin: 17mm;
+  --header-height: 23mm;
+  --footer-height: 12mm;
+  --body-pad-y: 9mm;
+  --body-pad-y-tight: 2mm;
+
+  --rule-gold: 1px solid var(--color-gold);
+}
