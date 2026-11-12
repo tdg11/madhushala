@@ -9,6 +9,17 @@ function feeLines(lines) {
     .join('')}</div>`;
 }
 
+// A 2-column grid of single-line highlight cards — same ivory/gold-bar
+// treatment as categoryCards(), just without a description line, for
+// pages whose content is a list of short phrases rather than name+desc
+// pairs. Gives that content the same structured visual weight as the
+// category-card/tier-card sections elsewhere, without adding any copy.
+function featureCards(items) {
+  return `<div class="cols-2">${items
+    .map((item) => `<div class="feature-card">${esc(item)}</div>`)
+    .join('')}</div>`;
+}
+
 function categoryCards(categories) {
   return categories
     .map(
@@ -202,7 +213,7 @@ module.exports = function render(data) {
     <div>
       <h2 class="section-title">${esc(data.page6.heading)}</h2>
       ${parasBold(data.page6.paragraphs, [1])}
-      ${bulletList(data.page6.bullets)}
+      ${featureCards(data.page6.bullets)}
       <p style="margin-top:10px;">${esc(data.page6.closing)}</p>
     </div>
     ${photoBanner(photoCohort, 310)}`,
