@@ -117,7 +117,7 @@ ul.check-list li::before {
 }
 
 ul.check-list li {
-  padding-left: 18px;
+  padding-left: 16px;
 }
 
 /* Used where pale/black text is intentionally swapped within a section
